@@ -10,8 +10,8 @@ You first need to create a `.env` file in the `server/` directory containing an 
 
 ### Server
 
-After having setting up the `.env` file, run `npx ts-node src/server.ts` in the `server/` directory to startup the server.
+After having setting up the `.env` file and ran `npm install` once in the `server/` directory, run `npx ts-node src/server.ts` in the `server/` directory to startup the server.
 
 ### Client
 
-After having started the server, run `ng serve -o` to open the client.
+After having started the server and ran `npm install` once in the `client/` directory, run `ng serve -o` in the `client/` directory to open the client.
