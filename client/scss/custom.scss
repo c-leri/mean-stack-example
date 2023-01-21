@@ -1,0 +1,42 @@
+// // Required
+// @import '../node_modules/bootstrap/scss/functions';
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/variables-dark";
+// @import "../node_modules/bootstrap/scss/maps";
+// @import "../node_modules/bootstrap/scss/mixins";
+// @import "../node_modules/bootstrap/scss/root";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$color-mode-type: data;
+
+@include color-mode(dark) {
+  .element {
+    color: var(--bs-primary-text);
+    background-color: var(--bs-primary-bg-subtle);
+  }
+
+  input[type=text] {
+    background-color: var(--bs-primary-bg);
+  }
+
+  input[type=text]:focus {
+    background-color: var(--bs-primary-bg);
+  }
+
+  input[type=radio] {
+    background-color: var(--bs-primary-bg);
+  }
+
+  input[type=radio]:checked {
+    background-color: var(--bs-primary-text);
+  }
+}
+
+// // Optional
+// @import "../node_modules/bootstrap/scss/forms";
+// @import "../node_modules/bootstrap/scss/containers";
+// @import "../node_modules/bootstrap/scss/tables";
+// @import "../node_modules/bootstrap/scss/buttons";
+// @import "../node_modules/bootstrap/scss/alert";
+// @import "../node_modules/bootstrap/scss/pagination";
